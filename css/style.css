@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+:root {
+  --primary-color:#278980;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -34,8 +38,48 @@ img {
   width: 100%;
 }
 
+/* General */
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  padding: 5px 20px 10px;
+  margin: 10px;
+}
+
+.card-title {
+  margin:0;
+  padding:0;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+/* Navbar */
+
 .navbar {
-  background-color: #278980;
+  background-color: var(--primary-color);
   color: #fff;
   height: 70px;
 }
@@ -60,19 +104,6 @@ img {
   border-bottom: 2px #fff solid;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
-
 /* Carousel */
 .gallery-cell {
   width: 100%;
@@ -85,9 +116,40 @@ img {
   display: flex;
 }
 
+/* Infos */
+.infos {
+  padding-top: 50px;
+}
+
+.infos .container {
+  background-color: #84e2dc;
+  padding-bottom: 10px;
+}
+.infos .flex {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.infos .flex-grid  {
+  display: flex;
+  justify-content: space-around;
+}
+
+.infos .card {
+  max-width: 30%;
+}
+
+.infos .card:hover {
+  transform: scale(1.05);
+  transition: .2s;
+}
+
 /* Footer */
 .footer {
   background-color: #278980;
   color: #fff;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   height: 70px;
 }
