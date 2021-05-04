@@ -2,7 +2,8 @@
 
 :root {
   --primary-color: #278980;
-  --secondary-color: #42abb9;
+  --secondary-color: #2BBCB2;
+  --tertiary-color: #C5C8C4;
 }
 
 * {
@@ -38,6 +39,7 @@ h2 {
 p {
   margin: 10px 0;
   font-size: 20px;
+
 }
 
 img {
@@ -78,7 +80,7 @@ img {
 
 /* Carousel */
 .carousel {
-  margin-top: 100px;
+  margin: 100px 300px 0 300px;
 }
 .gallery-cell {
   width: 100%;
@@ -141,7 +143,7 @@ img {
 
 /* Footer */
 .footer {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #fff;
   width: 100%;
 }
@@ -175,14 +177,13 @@ img {
   margin-bottom: 100px;
 }
 
-.products .grid {
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
+.products .flex {
+  justify-content: center;
 }
 
 .products .card {
-  min-width: 50%;
-  max-width: 50%;
+  min-width: 20%;
+  max-width: 20%;
 }
 
 .products .card:hover {
@@ -211,6 +212,9 @@ img {
     margin: 100px 10px;
   }
 
+  .carousel {
+    margin: 100px 0 0 0;
+  }
   .infos .flex {
     align-items: center;
   }
