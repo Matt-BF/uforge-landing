@@ -64,7 +64,18 @@ img {
 }
 
 .navbar img {
-  width: 10%;
+  width: 30%;
+}
+
+.navbar .img-link {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.navbar .img-link:hover {
+  border-bottom-style: none;
 }
 
 .navbar ul {
